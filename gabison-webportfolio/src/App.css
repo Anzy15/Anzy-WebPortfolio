@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 /* Global Styles */
 * {
   margin: 0;
@@ -80,10 +82,14 @@ main > * {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
   color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 /* Home Section */

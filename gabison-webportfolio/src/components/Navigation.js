@@ -1,5 +1,6 @@
 import React from 'react';
 import GooeyNav from './GooeyNav';
+import catLogo from '../images/chillcat.gif';
 
 function Navigation() {
   const items = [
@@ -14,6 +15,12 @@ function Navigation() {
   return (
     <nav className="navigation">
       <div className="nav-container">
+        <div className="nav-logo-section">
+          <div className="logo-placeholder">
+            <img src={catLogo} alt="Logo" className="nav-logo-img" />
+          </div>
+          <span className="nav-name">Andrei's Portfolio</span>
+        </div>
         <GooeyNav
           items={items}
           particleCount={15}

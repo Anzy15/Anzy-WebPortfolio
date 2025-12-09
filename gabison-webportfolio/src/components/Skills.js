@@ -1,35 +1,55 @@
 import React, { useState } from 'react';
 import TiltedCard from './TiltedCard';
 
+// Import skill logos
+import javaLogo from '../images/java.png';
+import javascriptLogo from '../images/javascript.png';
+import pythonLogo from '../images/python.png';
+import sqlLogo from '../images/sql.png';
+import htmlLogo from '../images/html.png';
+import cssLogo from '../images/css.png';
+import gitLogo from '../images/git.png';
+import githubLogo from '../images/github.png';
+import vscodeLogo from '../images/vscode.png';
+import figmaLogo from '../images/figma.png';
+import canvaLogo from '../images/canva.png';
+import postmanLogo from '../images/postman.png';
+import mysqlLogo from '../images/mysql.png';
+import reactLogo from '../images/react.png';
+import springbootLogo from '../images/springboot.png';
+import djangoLogo from '../images/django.png';
+import firebaseLogo from '../images/firebase.png';
+import awsLogo from '../images/aws.png';
+import servicenowLogo from '../images/servicenow.png';
+
 function Skills() {
   const [activeTab, setActiveTab] = useState('LANGUAGES');
 
   const skillsData = {
     LANGUAGES: [
-      { name: 'JavaScript', icon: null },
-      { name: 'Python', icon: null },
-      { name: 'Java', icon: null },
-      { name: 'TypeScript', icon: null },
-      { name: 'C', icon: null },
-      { name: 'SQL', icon: null },
-      { name: 'PHP', icon: null },
-      { name: 'HTML', icon: null }
+      { name: 'Java', icon: javaLogo },
+      { name: 'Javascript', icon: javascriptLogo },
+      { name: 'Python', icon: pythonLogo },
+      { name: 'SQL', icon: sqlLogo },
+      { name: 'HTML', icon: htmlLogo },
+      { name: 'CSS', icon: cssLogo }
     ],
     TOOLS: [
-      { name: 'Git', icon: null },
-      { name: 'Docker', icon: null },
-      { name: 'VS Code', icon: null },
-      { name: 'Figma', icon: null },
-      { name: 'Postman', icon: null },
-      { name: 'npm', icon: null }
+      { name: 'Git', icon: gitLogo },
+      { name: 'GitHub', icon: githubLogo },
+      { name: 'VS Code', icon: vscodeLogo },
+      { name: 'Figma', icon: figmaLogo },
+      { name: 'Canva', icon: canvaLogo },
+      { name: 'Postman', icon: postmanLogo },
+      { name: 'MySQL', icon: mysqlLogo }
     ],
     PLATFORMS: [
-      { name: 'React', icon: null },
-      { name: 'Node.js', icon: null },
-      { name: 'Spring Boot', icon: null },
-      { name: 'Firebase', icon: null },
-      { name: 'AWS', icon: null },
-      { name: 'MongoDB', icon: null }
+      { name: 'React', icon: reactLogo },
+      { name: 'Spring Boot', icon: springbootLogo },
+      { name: 'Django', icon: djangoLogo },
+      { name: 'Firebase', icon: firebaseLogo },
+      { name: 'AWS', icon: awsLogo },
+      { name: 'ServiceNow', icon: servicenowLogo }
     ]
   };
 

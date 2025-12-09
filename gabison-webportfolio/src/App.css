@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
+/* Custom Cursor */
+* {
+  cursor: none;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1488e1;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  mix-blend-mode: difference;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: #1488e1;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  box-shadow: 0 0 10px rgba(20, 136, 225, 0.8);
+}
+
+a, button, .nav-item, .contact-link, .skills-tab {
+  cursor: none !important;
+}
+
 /* Global Styles */
 * {
   margin: 0;

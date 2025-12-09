@@ -8,10 +8,12 @@ import Awards from './components/Awards';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Particles from './components/Particles';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
   return (
     <div className="App">
+      <CustomCursor />
       <div style={{ position: 'fixed', height: '100%', width: '100%', top: 0, left: 0, bottom: 0, right: 0, zIndex: 0, backgroundColor: '#000000' }}>
         <Particles
           particleColors={['#1488e1', '#1488e1']}
